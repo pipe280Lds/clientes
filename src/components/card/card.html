@@ -1,0 +1,11 @@
+<ion-card class="card" (click)="onCardClick(menuItem)">
+    <ion-item [color]="menuItem.color">
+        <ion-avatar item-left>
+            <ion-icon class="icon" [name]="menuItem.icon"></ion-icon>
+        </ion-avatar>
+        <h1>{{ menuItem.title }}</h1>
+        <ion-card-content>
+            {{ menuItem.content }}
+        </ion-card-content>
+    </ion-item>
+</ion-card>

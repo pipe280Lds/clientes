@@ -1,0 +1,38 @@
+.fondo {
+    background-image: url("../../assets/img/fondologin.jpeg");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.username {
+    background: transparent;
+    border: 0 solid;
+    color: white;
+    display: block;
+    margin-top: 4%;
+    ion-label {
+        font-size: large;
+    }
+    ;
+    ion-input {
+        color: white;
+    }
+}
+
+.btn-centered {
+    text-align: center;
+}
+
+.mt-bottom {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.olpass {
+    color: rgb(196, 196, 196);
+    margin-top: 20%;
+    display: block;
+}

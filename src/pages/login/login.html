@@ -1,0 +1,42 @@
+<ion-content padding class="fondo">
+    <div>
+        <img src="../assets/img/logo1.png" style="width:50%; height:31%; margin-left: 25%; margin-top: 10%;">
+        <ion-item class="username">
+            <ion-label stacked>
+                <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                <span>&nbsp;Usuario</span>
+            </ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item class="username">
+            <ion-label stacked>
+                <ion-icon ios="ios-key" md="md-key"></ion-icon>
+                <span>&nbsp;Contraseña</span>
+            </ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+        <div class="btn-centered">
+            <div class="mt-bottom">
+                <button ion-button class="mt-2" color="dark" (click)="onMenu()">
+                    <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+                    <span>&nbsp;Iniciar sesión</span>
+                  </button>
+            </div>
+            <button ion-button full class="mt-2">
+                    <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
+                    <span>&nbsp;Ingresar con facebook</span>
+                  </button>
+
+            <button ion-button color="danger" class="mt-2" full>
+                    <ion-icon ios="logo-google" md="logo-google"></ion-icon>
+                    <span>&nbsp;Ingresar con google</span>
+                  </button>
+            <button (click)="onRegistro()" ion-button class="mt-2" color="dark">
+                    <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+                    <span>&nbsp;Registrarse</span>
+                  </button>
+            <span class="olpass" (click)="showPrompt()">¿Olvidó Su Contraseña?</span>
+        </div>
+
+    </div>
+</ion-content>

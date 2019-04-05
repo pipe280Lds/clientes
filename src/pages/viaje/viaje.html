@@ -1,0 +1,68 @@
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-icon name="ios-flag" item-start></ion-icon>
+            <ion-label stacked>Origen</ion-label>
+            <ion-select okText="Guardar" cancelText="Cancelar">
+                <ion-option value="s">Guaduas</ion-option>
+                <ion-option value="a">Bogotá</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-flag-outline" item-start></ion-icon>
+            <ion-label stacked>Destino</ion-label>
+            <ion-select okText="Guardar" cancelText="Cancelar">
+                <ion-option value="g">Guaduas</ion-option>
+                <ion-option value="b">Bogotá</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-pin" item-start></ion-icon>
+            <ion-label floating>Direccion De Origen</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-navigate" item-start></ion-icon>
+            <ion-label floating>Direccion De Destino</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item><br>
+        <ion-item>
+            <ion-icon name="calendar" item-start></ion-icon>
+            <ion-label>Fecha</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate" okText="Guardar" cancelText="Cancelar"></ion-datetime>
+        </ion-item><br>
+        <ion-item>
+            <ion-label>Hora</ion-label>
+            <ion-icon name="ios-sunny" item-start></ion-icon>
+            <ion-select okText="Guardar" cancelText="Cancelar">
+                <ion-option value="a">4:00</ion-option>
+                <ion-option value="b">4:30</ion-option>
+                <ion-option value="c">5:00</ion-option>
+                <ion-option value="d">5:30</ion-option>
+                <ion-option value="e">6:00</ion-option>
+                <ion-option value="f">6:30</ion-option>
+                <ion-option value="g">7:00</ion-option>
+                <ion-option value="H">12:00</ion-option>
+                <ion-option value="I">12:30</ion-option>
+                <ion-option value="J">13:00</ion-option>
+                <ion-option value="K">13:30</ion-option>
+                <ion-option value="L">14:00</ion-option>
+                <ion-option value="M">14:30</ion-option>
+                <ion-option value="N">15:00</ion-option>
+            </ion-select>
+        </ion-item><br>
+        <ion-item>
+            <ion-icon name="ios-person" item-start></ion-icon>c
+            <ion-label stacked>Número De Pasajeros</ion-label>
+            <ion-select okText="Guardar" cancelText="Cancelar">
+                <ion-option value="1">1</ion-option>
+                <ion-option value="2">2</ion-option>
+                <ion-option value="3">3</ion-option>
+                <ion-option value="4">4</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-footer>
+            <button (click)="showConfirm()" ion-button full outline color="dark">Continuar</button>
+        </ion-footer>
+    </ion-list>
+</ion-content>

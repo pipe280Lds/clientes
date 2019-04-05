@@ -1,0 +1,25 @@
+<!--
+  Generated template for the SideMenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content id="menu-material">
+  <div class="menu-header" >
+    <!--material-design-background-->
+    <img class="user-avatar round" style="height:90px;max-width:90px;" src="../../assets/img/avatar/girl-avatar.png"/>
+    <p class="name">OST</p>
+    <p class="e-mail">opensourcetechnologies.com</p>
+  </div>
+  <ion-list no-lines>
+    <ion-item menuClose
+      *ngFor="let p of menuItems"
+      (click)="onMenuItemClick(p)">
+
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+    </ion-item>
+  </ion-list>
+</ion-content>

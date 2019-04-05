@@ -1,0 +1,70 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+
+    <div>
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+    </div>
+
+    <ion-item class="login-username">
+        <ion-label stacked>
+            <ion-icon ios="ios-person" md="md-person"></ion-icon>
+            <span>&nbsp;Nombre</span>
+        </ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="login-username">
+        <ion-label stacked>
+            <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+            <span>&nbsp;Correo electrónico</span>
+        </ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="login-username">
+        <ion-label stacked>
+            <ion-icon ios="ios-key" md="md-key"></ion-icon>
+            <span>&nbsp;Contraseña</span>
+        </ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="login-username">
+        <ion-label stacked>
+            <ion-icon ios="ios-navigate" md="md-navigate"></ion-icon>
+            <span>&nbsp;Dirección</span></ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <div class="btn-centered">
+        <div>
+            <button (click)="onLogin()" ion-button class="mt-2" color="dark">
+        <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+        <span>&nbsp;Iniciar sesión</span>
+      </button>
+
+            <button ion-button class="mt-2" color="secondary">
+        <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+        <span>&nbsp;Registrarme</span>
+      </button>
+        </div>
+
+        <button ion-button full class="mt-2">
+      <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
+      <span>&nbsp;Registro con facebook</span>
+    </button>
+
+        <button ion-button color="danger" class="mt-2" full>
+      <ion-icon ios="logo-google" md="logo-google"></ion-icon>
+      <span>&nbsp;Registro con google</span>
+    </button>
+    </div>
+</ion-content>

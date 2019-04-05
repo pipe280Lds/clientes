@@ -1,0 +1,4 @@
+<ion-menu [content]="content">
+    <page-side-menu (cardClick)="onMenuItemClick($event)"></page-side-menu>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>
